@@ -16,7 +16,7 @@ jobs:
       - name: Set up Git configuration
         run: |
           git config --global user.email "deorikhiyanat@gmail.com"
-          git config --global user.name "Khiyanat-Deori"
+          git config --global user.name "khiyanat-deori"
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
