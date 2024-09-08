@@ -29,10 +29,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install gh-pages
+        run: npm install gh-pages --save-dev
+
       - name: Build
         run: npm run predeploy
 
       - name: Deploy to GitHub Pages
-        run: gh-pages -d build -v
+        run: npx gh-pages -d build -v
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
