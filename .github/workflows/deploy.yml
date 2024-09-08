@@ -17,6 +17,9 @@ jobs:
         run: |
           git config --global user.email "deorikhiyanat@gmail.com"
           git config --global user.name "Khiyanat-Deori"
+          
+      - name: Configure Git remote to use SSH
+        run: git remote set-url origin git@github.com:Khiyanat-Deori/my-portfolio.git
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -30,6 +33,6 @@ jobs:
         run: npm run predeploy
 
       - name: Deploy to GitHub Pages
-        run: npm run deploy
+        run: gh-pages -d build -v
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
