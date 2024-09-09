@@ -14,7 +14,7 @@ const Header = () => {
   const handleScrollToSection = (e, id) => {
     e.preventDefault();
     const section = document.getElementById(id);
-    const headerOffset = 64; 
+    const headerOffset = 74; 
     const elementPosition = section.getBoundingClientRect().top;
     const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
