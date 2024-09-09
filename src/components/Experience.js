@@ -1,4 +1,5 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const experiences = [
   {
@@ -16,17 +17,41 @@ const experiences = [
 ];
 
 const Experience = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <section id="experience" className="container mx-auto my-8 p-4">
-      <h2 className="text-3xl font-bold mb-4">Experience</h2>
-      <div className="space-y-4">
-        {experiences.map((exp, index) => (
-          <div key={index} className="bg-white p-4 rounded shadow">
-            <h3 className="text-xl font-semibold">{exp.role}</h3>
-            <p className="text-gray-600">{exp.company} - {exp.duration}</p>
-            <p className="mt-2">{exp.description}</p>
-          </div>
-        ))}
+    <section
+      id="experience"
+      className={`container mx-auto my-8 p-6 bg-gray-800 text-white rounded-lg shadow-lg transition-opacity duration-1000 ${
+        inView ? 'opacity-100' : 'opacity-0'
+      }`}
+      ref={ref}
+    >
+      <div className="flex flex-col items-center text-center">
+        <h2
+          className={`text-3xl font-mono font-bold mb-4 text-green-400 ${
+            inView ? 'bounce-in' : ''
+          }`}
+        >
+          Experience
+        </h2>
+        <div className="space-y-4 w-full">
+          {experiences.map((exp, index) => (
+            <div
+              key={index}
+              className={`bg-gray-700 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105 ${
+                inView ? 'bounce-in' : ''
+              }`}
+            >
+              <h3 className="text-xl font-semibold text-green-400">{exp.role}</h3>
+              <p className="text-gray-300 font-mono">{exp.company} - {exp.duration}</p>
+              <p className="mt-2 font-mono leading-relaxed">{exp.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

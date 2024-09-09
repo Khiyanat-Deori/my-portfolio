@@ -29,7 +29,10 @@ const Header = () => {
   return (
     <header className="bg-gray-800 p-4 text-white fixed top-0 w-full z-50 shadow-md">
       <nav className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Khiyanat Deori</h1>
+        <div className="flex items-center space-x-4">
+          <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-a1170.appspot.com/o/mylogo.png?alt=media&token=e8cebd08-528f-4230-b958-c86692b9848b" alt="Logo" className="h-12 w-12" />
+          <h1 className="text-2xl font-mono font-bold">Khiyanat Deori</h1>
+        </div>
 
         <button
           onClick={toggleMenu}
@@ -75,7 +78,6 @@ const Header = () => {
             isOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
           } lg:transform-none z-40`}
         >
-          
           {isOpen && (
             <button
               onClick={toggleMenu}
@@ -102,7 +104,7 @@ const Header = () => {
             <a
               href="#about"
               onClick={(e) => handleScrollToSection(e, 'about')}
-              className="block py-4 px-6 hover:bg-gray-700 lg:hover:bg-transparent"
+              className="font-mono block py-4 px-6 hover:bg-gray-700 lg:hover:bg-transparent"
             >
               About
             </a>
@@ -111,7 +113,7 @@ const Header = () => {
             <a
               href="#projects"
               onClick={(e) => handleScrollToSection(e, 'projects')}
-              className="block py-4 px-6 hover:bg-gray-700 lg:hover:bg-transparent"
+              className="font-mono block py-4 px-6 hover:bg-gray-700 lg:hover:bg-transparent"
             >
               Projects
             </a>
@@ -120,7 +122,7 @@ const Header = () => {
             <a
               href="#skills"
               onClick={(e) => handleScrollToSection(e, 'skills')}
-              className="block py-4 px-6 hover:bg-gray-700 lg:hover:bg-transparent"
+              className="font-mono block py-4 px-6 hover:bg-gray-700 lg:hover:bg-transparent"
             >
               Skills
             </a>
@@ -129,7 +131,7 @@ const Header = () => {
             <a
               href="#experience"
               onClick={(e) => handleScrollToSection(e, 'experience')}
-              className="block py-4 px-6 hover:bg-gray-700 lg:hover:bg-transparent"
+              className="font-mono block py-4 px-6 hover:bg-gray-700 lg:hover:bg-transparent"
             >
               Experience
             </a>
@@ -138,7 +140,7 @@ const Header = () => {
             <a
               href="#education"
               onClick={(e) => handleScrollToSection(e, 'education')}
-              className="block py-4 px-6 hover:bg-gray-700 lg:hover:bg-transparent"
+              className="font-mono block py-4 px-6 hover:bg-gray-700 lg:hover:bg-transparent"
             >
               Education
             </a>
@@ -147,7 +149,7 @@ const Header = () => {
             <a
               href="#contact"
               onClick={(e) => handleScrollToSection(e, 'contact')}
-              className="block py-4 px-6 hover:bg-gray-700 lg:hover:bg-transparent"
+              className="font-mono block py-4 px-6 hover:bg-gray-700 lg:hover:bg-transparent"
             >
               Contact
             </a>
@@ -155,7 +157,6 @@ const Header = () => {
         </ul>
       </nav>
 
-      
       {isOpen && (
         <div
           onClick={toggleMenu}
@@ -167,4 +168,3 @@ const Header = () => {
 };
 
 export default Header;
-
