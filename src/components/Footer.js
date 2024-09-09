@@ -1,15 +1,3 @@
-// import React from 'react';
-
-// const Footer = () => (
-//   <footer className="bg-gray-800 text-white p-4">
-//     <div className="container mx-auto text-center">
-//       <p>&copy; 2024 K H I Y A N A T D E O R I. All rights reserved.</p>
-//     </div>
-//   </footer>
-// );
-
-// export default Footer;
-
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -17,7 +5,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 const Footer = () => (
   <footer className="bg-gray-800 text-white p-4">
     <div className="container mx-auto text-center">
-      <p>&copy; 2024 K H I Y A N A T D E O R I. All rights reserved.</p>
+      <p>&copy; 2024 Khiyant Deori. All rights reserved.</p>
       <div className="mt-4 flex justify-center space-x-4">
         
         <a 
