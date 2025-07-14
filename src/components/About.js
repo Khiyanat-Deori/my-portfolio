@@ -29,7 +29,7 @@ const About = () => {
             inView ? 'bounce-in' : ''
           }`}
         >
-          Hi, Khiyanat Deori here, a dynamic leader with experience in AI data operations, web development, and project management. Skilled in full stack development (React.js, Node.js, Express.js), Python automation, and team leadership. Focused on delivering high-quality solutions and optimizing project workflows.
+          Hi, Khiyanat here, a dynamic leader with experience in AI data operations, web development, and project management. Skilled in full stack development (React.js, Node.js, Express.js), Python automation, and team leadership. Focused on delivering high-quality solutions and optimizing project workflows.
         </p>
         <Link
           to="contact" 
