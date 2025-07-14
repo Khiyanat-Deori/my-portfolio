@@ -5,19 +5,22 @@ const projects = [
   {
     name: "Sultan Multispeciality Hospital Website",
     description: "A user-friendly website for appointment bookings with an admin panel for management using React.js, Node.js, and Firebase.",
-    link: "https://sultanhospital.in/",
+    link: "https://github.com/Khiyanat-Deori/sultan-frontend-firebase",
   },
   {
     name: "Blogging Website",
     description: "A blogging platform with CRUD operations and user authentication built on the MERN stack.",
+    link: "https://github.com/Khiyanat-Deori/BlogsApp-2023",
   },
   {
     name: "E-commerce Website",
     description: "An e-commerce application with product status management and payment integration built on the MERN stack.",
+    link: "https://github.com/Khiyanat-Deori/EcomApp-2023",
   },
   {
     name: "Diesel Generator Monitoring System",
     description: "Developed an IoT-based real-time monitoring system for diesel generators using the MQTT protocol, with Arduino for hardware interfacing and Node-RED for data flow management.",
+    link: "https://media.licdn.com/dms/document/media/v2/C562DAQGzY-2OvW0HqA/profile-treasury-document-pdf-analyzed/profile-treasury-document-pdf-analyzed/0/1621574327177?e=1753315200&v=beta&t=jkW289GQm8TyB8ldtMBIWpylhDghdd2Tn-EmeITkU1w",
   },
 ];
 
