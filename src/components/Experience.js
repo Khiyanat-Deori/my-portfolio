@@ -5,7 +5,7 @@ const experiences = [
   {
     role: "Associate Project Manager",
     company: "Deccan AI",
-    duration: "Nov 2022 - Present",
+    duration: "Nov 2024 - Present",
     description: "Leading a team of 7 to ensure timely, high-quality delivery of RLHF and SFT projects. Developed a Python-based system for automated assessment scoring using JSON queries to extract data from Metabase. Built and maintained SQL dashboards in Metabase for real-time monitoring and quality analytics. Improved the UI of an internal project management tool to streamline deployment and annotator workflows. Managed project allocation and access credentials, optimizing task assignments and reducing credential management costs."  
   },
   {
