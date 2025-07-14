@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 
 const skills = [
   "HTML", "CSS", "JavaScript", "React.js", "Node.js", "Express.js", "SQL", 
-  "MongoDB", "Firebase", "Git", "GitHub", "MATLAB", "C", "C++", "JAVA"
+  "MongoDB", "Firebase", "Python", "GitHub", "MATLAB", "C", "C++", "JAVA"
 ];
 
 const Skills = () => {
