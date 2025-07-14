@@ -48,9 +48,28 @@ const Projects = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {projects.map((project, index) => (
+            // <div
+            //   key={index}
+            //   className={`bg-gray-700 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105 ${
+            //     inView ? 'bounce-in' : ''
+            //   }`}
+            // >
+            //   <h3 className="text-xl font-semibold text-green-400">{project.name}</h3>
+            //   <p className="mt-2 font-mono leading-relaxed">{project.description}</p>
+            //   {project.link && (
+            //     <a
+            //       href={project.link}
+            //       target="_blank"
+            //       rel="noopener noreferrer"
+            //       className="mt-4 inline-block px-4 py-2 bg-green-600 text-white font-mono font-semibold rounded-lg shadow-md transition-transform transform hover:scale-105"
+            //     >
+            //       View Project
+            //     </a>
+            //   )}
+            // </div>
             <div
               key={index}
-              className={`bg-gray-700 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105 ${
+              className={`bg-gray-700 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105 flex flex-col h-full ${
                 inView ? 'bounce-in' : ''
               }`}
             >
@@ -61,7 +80,7 @@ const Projects = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 inline-block px-4 py-2 bg-green-600 text-white font-mono font-semibold rounded-lg shadow-md transition-transform transform hover:scale-105"
+                  className="mt-auto inline-block px-4 py-2 bg-green-600 text-white font-mono font-semibold rounded-lg shadow-md transition-transform transform hover:scale-105"
                 >
                   View Project
                 </a>
