@@ -29,9 +29,7 @@ const About = () => {
             inView ? 'bounce-in' : ''
           }`}
         >
-          I am Khiyanat Deori, a Full-Stack Developer with a strong foundation in web development technologies
-          and extensive experience in designing, developing, and maintaining responsive web applications.
-          Passionate about enhancing web applications to improve user experience and optimize functionality.
+          Hi, Khiyanat Deori here, a dynamic leader with experience in AI data operations, web development, and project management. Skilled in full stack development (React.js, Node.js, Express.js), Python automation, and team leadership. Focused on delivering high-quality solutions and optimizing project workflows.
         </p>
         <Link
           to="contact" 
