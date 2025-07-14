@@ -30,7 +30,7 @@ const Header = () => {
     <header className="bg-gray-800 p-4 text-white fixed top-0 w-full z-50 shadow-md">
       <nav className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
-          <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-a1170.appspot.com/o/mylogo.png?alt=media&token=e8cebd08-528f-4230-b958-c86692b9848b" alt="Logo" className="h-12 w-12" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-a1170.appspot.com/o/Currentlogo.png?alt=media&token=f34d8aaf-0170-4516-a6ae-86794c6a038e" alt="Logo" className="h-12 w-12" />
           <h1 className="text-2xl font-mono font-bold">Khiyanat Deori</h1>
         </div>
 
