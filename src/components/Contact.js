@@ -110,7 +110,7 @@ const Contact = () => {
               inView ? 'bounce-in' : ''
             }`}
           >
-            Location: Morigaon-782105, Assam, India
+            Location: Hyderabad, Telangana, India
           </p>
         </div>
       </div>
